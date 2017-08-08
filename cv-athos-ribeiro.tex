@@ -1,0 +1,241 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.2 (3/5/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+
+\addbibresource{bibliography.bib} % Specify the bibliography file to include publications
+
+\begin{document}
+
+\header{Athos}{\ Ribeiro}{Software Engineer} % Your name and current job title/field
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{contact}
+Avenida Diógenes Ribeiro de Lima, 2001
+São Paulo, SP 05458-001
+Brazil
+~
++55(11) 98437-7463
+~
+\href{mailto:athoscribeiro@gmail.com}{athoscribeiro AT gmail}
+\href{http://athoscr.me}{athoscr.me}
+\href{https://www.ime.usp.br/~athoscr}{ime.usp.br/$\textasciitilde$athoscr}
+\href{https://github.com/athos-ribeiro}{github: athos-ribeiro}
+\section{languages}
+Portuguese - native
+English - fluent
+Spanish - basic
+\section{programming}
+Python
+Ruby
+Perl
+Shell script
+C/C++
+Go
+\section{software}
+GNU/Linux
+Ansible
+Chef
+Docker
+Vagrant
+RPM
+git
+\LaTeX
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{education}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2016--current}
+{Master's degree -- {\normalfont Computer Science}}
+{University of São Paulo, Brazil}
+  {\emph{Ranking Warnings Based on Continuous Source Code Static Analysis Reports} \\ This ongoing thesis aims to train a machine learning model to identify possible false positive warnings in static analysis reports from multiple tools and provide a ranked warning list to users.}
+
+%------------------------------------------------
+
+\entry
+{2011--2015}
+{Bachelor -- {\normalfont Software Engineering}}
+{University of Brasília, Brazil}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{experience}
+
+\subsection{Full Time}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2012--Now}
+{LEHMAN BROTHERS}
+{Los Angeles, California}
+{\emph{1\textsuperscript{st} Year Analyst} \\
+Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (ags, oils, precious and base metals), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping. \\
+Detailed achievements:
+\begin{itemize}
+\item Learned how to make amazing coffee
+\item Finally determined the reason for \textsc{PC LOAD LETTER}:
+\begin{itemize}
+\item Paper jam
+\item Software issues:
+\begin{itemize}
+\item Word not sending the correct data to printer
+\item Windows trying to print in letter format
+\end{itemize}
+\item Coffee spilled inside printer
+\end{itemize}
+\item Broke the office record for number of kitten pictures in cubicle
+\item Learned how to make more amazing coffee on a new machine
+\end{itemize}}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+\subsection{Part Time}
+
+\begin{entrylist}
+
+\entry
+{2010--2011}
+{LEHMAN BROTHERS}
+{London, United Kingdom}
+{\emph{Summer Intern} \\
+Received pre-placed offer from the Exotics Trading Desk as a result of very positive reviews. Rated "truly distinctive" for Analytical Skills and Teamwork.}
+
+%------------------------------------------------
+
+\entry
+{2008-2009}
+{Buy More}
+{Burbank, California}
+{\emph{Computer Repair Specialist} \\
+Worked in the Nerd Herd and helped to solve computer problems by asking customers to turn their computers off and on again.}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{awards}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2011}
+{Postgraduate Scholarship}
+{School of Business, The University of California}
+{Awarded to the top student in their final year of a Bachelors degree. Mastered the art of filing accurate TPS reports.}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{communication skills}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2011}
+{Oral Presentation}
+{California Business Conference}
+{Presented the research I conducted for my Masters of Commerce degree.}
+
+%------------------------------------------------
+
+\entry
+{2010}
+{Poster}
+{Annual Business Conference, Oregon}
+{As part of the course work for BUS320, I created a poster analyzing several local businesses and presented this at a conference.}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{interests}
+
+\textbf{professional:} Free Software, DevOps, Software Design, Programming, Release Engineering, Infrastructure\\
+\textbf{personal:} Soccer, Homebrewing, Brazilian Jiu-Jitsu, Table tennis
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{publications}
+
+\printbibsection{article}{article in peer-reviewed journal} % Print all articles from the bibliography
+
+\printbibsection{book}{books} % Print all books from the bibliography
+
+\begin{refsection} % This is a custom heading for those references marked as "inproceedings" but not containing "keyword=brazil"
+\nocite{*}
+\printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={brazil}, heading=bibheading]
+\end{refsection}
+
+\begin{refsection} % This is a custom heading for those references marked as "inproceedings" and containing "keyword=brazil"
+\nocite{*}
+\printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={brazil}, heading=bibheading]
+\end{refsection}
+
+\printbibsection{misc}{other publications} % Print all miscellaneous entries from the bibliography
+
+\printbibsection{report}{research reports} % Print all research reports from the bibliography
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
