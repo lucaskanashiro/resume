@@ -17,7 +17,7 @@ $(BASE_NAME).pdf: $(BASE_NAME).tex bibliography.bib friggeri-cv.cls
 	$(PDFLATEX) $<
 	$(PDFLATEX) $<
 	cp $(BUILD_DIR)/$(BASE_NAME).pdf $(PDF_NAME)
-	gnome-open $(PDF_NAME)
+	evince $(PDF_NAME)
 
 clean:
 	rm -rf build $(PDF_NAME)
