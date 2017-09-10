@@ -1,9 +1,4 @@
-# Disclaimer
-
-**Note that I am still working on this CV, meaning that it does not reflect my
-actual CV at all**
-
-# About
+# About this repository
 
 This is my personal resume, based on Adrien Friggeri resume tex template. I did
 change some of the fonts to use fonts freely available (FiraSans). There is a
