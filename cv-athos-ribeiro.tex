@@ -19,7 +19,12 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+% Add 'print' as an option into the square bracket to remove colors from this template for printing
+\ifdefined\nocolors
+  \documentclass[print]{friggeri-cv}
+\else
+  \documentclass[]{friggeri-cv}
+\fi
 
 \addbibresource{bibliography.bib} % Specify the bibliography file to include publications
 
