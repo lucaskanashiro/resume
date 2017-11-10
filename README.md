@@ -10,6 +10,11 @@ on light, if printing on paper is needed.
 Copyright (C) 2017, Athos Ribeiro
 
 The license information regarding the LateX template used for this resume can
-be found on friggeri-cv.cls. All the other files available in this repository
-are licensed under a [Creative Commons Attribution 4.0 International
+be found on friggeri-cv.cls. See https://github.com/afriggeri/CV
+
+The letter was created by Matthew Davis, based on Adrien Friggeri's code.  See
+https://github.com/mlda065/friggeri-letter
+
+All the other files available in this repository are licensed under a [Creative
+Commons Attribution 4.0 International
 License](https://creativecommons.org/licenses/by/4.0/).
