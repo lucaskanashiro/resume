@@ -40,7 +40,11 @@ $(BASE_NAME)-cover.pdf: cover-letter.tex
 	$(PDFLATEX) "$(NO_COLORS) \input{$<}"
 	cp $(BUILD_DIR)/cover-letter.pdf $(COVER_PDF_NAME)
 
-.PHONY: clean pdf nocolors cover
+.PHONY: clean pdf nocolors cover check
 
 clean:
 	rm -rf build $(PDF_NAME) $(COVER_PDF_NAME) $(CV_PLUS_COVER_PDF)
+
+check:
+	aspell -t -l en -c cover-letter.tex
+	aspell -t -l en -c $(BASE_NAME).tex
