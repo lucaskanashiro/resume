@@ -1,8 +1,8 @@
-BASE_NAME = cv-athos-ribeiro
+BASE_NAME = cv-lucas-kanashiro
 BUILD_DIR = build
-PDF_NAME = cv-athos-ribeiro.pdf
-COVER_PDF_NAME = cv-athos-ribeiro-cover.pdf
-CV_PLUS_COVER_PDF = cv-athos-ribeiro-with-cover.pdf
+PDF_NAME = cv-lucas-kanashiro.pdf
+COVER_PDF_NAME = cv-lucas-kanashiro-cover.pdf
+CV_PLUS_COVER_PDF = cv-lucas-kanashiro-with-cover.pdf
 
 PDFLATEX_OPTIONS = -halt-on-error -aux-directory=$(BUILD_DIR) -output-directory=$(BUILD_DIR)
 LATEX     = latex

@@ -1,0 +1,57 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Cover Letter
+% XeLaTeX Template
+% Version 1.0 (1/11/15) 
+%
+% This template has been downloaded from:
+% https://github.com/mlda065/friggeri-letter
+%
+% Original author:
+% Matthew Davis, based on code by 
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% 
+% Important notes:
+% This template needs to be compiled with XeLaTeX
+% You may need to compile twice for the header to appear.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+\documentclass[a4paper,english]{friggeri-letter}
+
+\usepackage{babel}
+
+\begin{document}
+
+\header{Athos}{\ Ribeiro}{Software Engineer} % Your name and current job title/field
+
+\address{ 
+Avenida Diógenes Ribeiro de Lima, 2001\\
+São Paulo, SP 05458-001\\
+Brazil
+}
+
+
+\letter{ 
+   Recipient's name \\ 
+   1234 Fake St \\
+   New Zealand
+} 
+
+
+   
+  
+
+\opening{Dear Name:} 
+
+Explain why you want the job, and summarise why you deserve the job.
+
+
+\closing{
+   Yours Sincerely\\
+   Athos Ribeiro} 
+
+\end{document}
